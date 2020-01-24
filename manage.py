@@ -7,6 +7,7 @@ import coverage
 
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
+import json
 
 COV = coverage.coverage(
     branch=True,
@@ -69,6 +70,17 @@ def drop_db():
     """Drops the db tables."""
     db.drop_all()
 
+@app.route("/users/index")
+def home():
+    list_data = []
+    temp = db.session.query(models.User)
+    count = 1
+    for s in temp:
+        temp2 = {}
+        temp2['User#' + str(count)] = s.email
+        list_data.append(temp2)
+        count = count + 1
+    return str(list_data)
 
 if __name__ == '__main__':
     manager.run()
