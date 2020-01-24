@@ -1,0 +1,13 @@
+1. https://github.com/ltann/cs591_c2_diagnostic_test
+2. https://cs591-diagnostic-test.herokuapp.com/users/index
+3. I, Xuan Hy Nguyen, confirm that I have read and understood the syllabus outlined at https://cs-people.bu.edu/dharmesh/teaching/cs591_sp20. U53460525
+
+Sources:
+
+I borrowed code from:
+
+https://realpython.com/token-based-authentication-with-flask/
+https://medium.com/the-andela-way/deploying-a-python-flask-app-to-heroku-41250bda27d0
+
+vineet's answer on:
+https://stackoverflow.com/questions/26595874/i-want-make-push-and-get-error-src-refspec-master-does-not-match-any
